@@ -5,6 +5,7 @@ import TabButton from "./components/TabButton"
 import {CORE_CONCEPTS} from './data'
 import { EXAMPLES } from "./data.js"
 import { Component } from "react"
+import { Fragment } from "react"
 
 function App() {
 
@@ -16,7 +17,7 @@ function App() {
 
   
     return(
-      <div>
+      <Fragment>
         <Header />
         <main>
 
@@ -53,7 +54,7 @@ function App() {
           </section>
 
         </main>
-      </div>
+      </Fragment>
     )
 
   }
