@@ -1,8 +1,7 @@
 import TabButton from "./TabButton"
 import { useState } from "react"
 import { EXAMPLES } from "../data"
-
-
+import Section from "./Section"
 
 
 
@@ -15,13 +14,13 @@ function Examples(){
   }
 
     return(
-        <section id="examples">
-            <h2>Examples</h2>
+        <Section id="examples">
+            
             <menu>
-              <TabButton isSelected={selectedTopic === 'components'} onSelect={()=>selectHandler('components')}>Components</TabButton>
-              <TabButton isSelected={selectedTopic === 'jsx'} onSelect={()=>selectHandler('jsx')}>JSX</TabButton>
-              <TabButton isSelected={selectedTopic === 'props'} onSelect={()=>selectHandler('props')}>Props</TabButton>
-              <TabButton isSelected={selectedTopic === 'state'} onSelect={()=>selectHandler('state')}>State</TabButton>
+              <TabButton isSelected={selectedTopic === 'components'} onClick={()=>selectHandler('components')}>Components</TabButton>
+              <TabButton isSelected={selectedTopic === 'jsx'} onClick={()=>selectHandler('jsx')}>JSX</TabButton>
+              <TabButton isSelected={selectedTopic === 'props'} onClick={()=>selectHandler('props')}>Props</TabButton>
+              <TabButton isSelected={selectedTopic === 'state'} onClick={()=>selectHandler('state')}>State</TabButton>
             </menu>
             
             {!selectedTopic && <p>Please Select Topic</p>}
@@ -35,7 +34,7 @@ function Examples(){
               </pre>
             </div>}
 
-          </section>
+          </Section>
     )
 }
 
