@@ -33,7 +33,9 @@ function Examples(){
     return(
         <Section id="examples">
             
-            <Tabs buttons={
+            <Tabs
+            buttonsContainer ='menu'
+            buttons={
               <>
                 <TabButton isSelected={selectedTopic === 'components'} onClick={()=>selectHandler('components')}>Components</TabButton>
                 <TabButton isSelected={selectedTopic === 'jsx'} onClick={()=>selectHandler('jsx')}>JSX</TabButton>
