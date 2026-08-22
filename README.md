@@ -5,5 +5,6 @@ A collection of hands-on projects and examples for learning and practicing React
 ## Topics
 
 - [x] React Essentials
+- [x] React Essentials Deep Dive
 
 
